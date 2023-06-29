@@ -1,0 +1,7 @@
+.venv
+.env
+.vscode
+__pycache__
+data.db
+*.pyc
+.DS_Store
