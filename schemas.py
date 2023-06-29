@@ -54,4 +54,7 @@ class UserSchema(Schema):
     id = fields.Int(dump_only=True)
     username = fields.Str(required=True)
     password = fields.Str(required=True)   # load_only=True >>> make sure that the password is never being sent to the client
-   
+
+
+class UserRegisterSchema(UserSchema):
+    emal = fields.Str(required=True)
